@@ -1,0 +1,229 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+
+}
+
+body {
+	background-color: white;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* ------------------------------------------ CONTENEDOR INDEX -------------------------------------------------------------------- */
+
+.contenedor {
+	width: 100%;
+	/* max-width: 1000px; */
+	margin: 30px auto;
+	display: grid;
+	grid-gap: 20px;
+	align-items: center;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(3, auto);
+
+	grid-template-areas: "header  "
+						"contenido  "
+						"footer  ";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .footer {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	background-color:white;
+	grid-area: header;
+	text-align: right;
+	border-bottom: solid pink;
+	
+}
+.menu{
+	margin-left: 20px ;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+.menu:hover {
+    color: purple;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.contenedor .contenido {
+	background-image:url("../img/logo2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:contain;
+	grid-area: contenido;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	min-height: 500px;
+	}
+
+.contenedor .footer {
+	background: white;
+	color: black;
+	grid-area: footer;
+    text-align: left;
+    padding-left: 10%;
+    border-top: solid pink;
+    margin-bottom: 0;
+
+	}
+
+	.redsoc {
+		color: pink;
+		font-size: 25px;
+		font-weight: bold;
+	
+	}
+
+
+/* ------------------------------------------ CONTENEDOR SOBRE NOSOTROS -------------------------------------------------------------------- */
+
+	
+.paginas {
+	width: 100%;
+	display: grid;
+	align-items: center;
+	grid-template-areas: "texto sidebar";
+							
+}
+
+.contenedor .texto,
+.contenedor .imagen {
+	background: white;
+	color: black;
+	width:auto;
+	height: auto;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+
+}
+
+.contenedor .texto {
+	grid-area: texto;
+}
+
+.contenedor .imagen {
+
+	grid-area: sidebar;
+
+}
+
+
+/* ------------------------------------------ CONTENEDOR GALERIA -------------------------------------------------------------------- */
+
+
+	
+.galeria {
+	width: 100%;
+	display: grid;
+	align-items: center;
+	grid-template-areas: "foto1  foto2 foto3 foto4";
+						
+					 							
+}
+
+
+.contenedor .foto1,
+.contenedor .foto2,
+.contenedor .foto3,
+.contenedor .foto4
+
+{
+	background-color: white;
+	color: black;
+	width: auto;
+	height: 600px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	
+	
+}
+
+.contenedor .foto1 {
+	grid-area: foto1;
+}
+
+.contenedor .foto2 {
+	grid-area: foto2;
+}
+
+.contenedor .foto3 {
+	grid-area: foto3;
+}
+
+.contenedor .foto4 {
+	grid-area: foto4;
+}
+
+.centrado {
+	border: 5px solid pink;
+	border-radius: 10px;
+
+}
+
+.centrado:hover{
+	transform: translateY(-10px);
+}
+
+
+/* ------------------------------------------ CONTENEDOR FORMULARIO -------------------------------------------------------------------- */
+
+	
+.contacto {
+	width: 100%;
+	display: grid;
+	align-items: center;
+	grid-template-areas: "formulario mapa";
+							
+}
+
+.contenedor .formulario,
+.contenedor .mapa {
+	background: white;
+	color: black;
+	width:auto;
+	height: auto;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.contenedor .formulario {
+	grid-area: formulario;
+}
+
+.contenedor .mapa {
+
+	grid-area: mapa;
+
+}
+
+
+.formulario{
+	text-align: left;
+	font-size: 20px;
+	padding-top: 20px;
+
+}
+
